@@ -12,9 +12,14 @@ const SingleCharDiv = styled.div<{jobType: string}>`
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    max-width: 20%;
+    max-width: 23%;
     padding: 2%; 
     margin: 3%;
+    img{
+        max-width: 100%;
+        height: auto;
+        margin: 20px;
+    }
     
     //ASK ABOUT WHAT'S WRONG WITH THIS LINE
     background-color: ${(props)=>(props.jobType === "full-time" ? 'red' : 'lightpink')};
@@ -22,7 +27,7 @@ const SingleCharDiv = styled.div<{jobType: string}>`
     //ASK ABOUT WHAT'S WRONG WITH THIS LINE
     
     border: 3px red solid;
-    font: small-caps bold calc(1px + 1vw) Helvetica; 
+    font: small-caps bold calc(2px + 1vw) Helvetica; 
     text-align: center;
 `;
 

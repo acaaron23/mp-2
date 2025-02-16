@@ -4,10 +4,12 @@ import { Job } from "./interfaces/Jobs.ts";
 import JobFinder from "./components/JobInfo.tsx";
 
 const ParentDiv = styled.div`
-    width: 90vw;
+    width: 80%;
     margin: auto;
     border: 5px lightslategray solid;
-`;
+    text-align: center;
+    color: black;
+`
 
 export default function App() {
     const [data, setData] = useState<Job[]>([]);
@@ -26,6 +28,7 @@ export default function App() {
 
     return (
         <ParentDiv>
+            <h1>Job Board for Remote Jobs in USA</h1>
             <JobFinder data = {data}/>
         </ParentDiv>
   )
