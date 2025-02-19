@@ -20,12 +20,10 @@ const SingleCharDiv = styled.div<{jobType: string}>`
         height: auto;
         margin: 20px;
     }
-    
-    //ASK ABOUT WHAT'S WRONG WITH THIS LINE
-    background-color: ${(props)=>(props.jobType === "full-time" ? 'red' : 'lightpink')};
-    color: ${(props)=>(props.jobType === "full-time" ? 'white' : 'black')};
-    //ASK ABOUT WHAT'S WRONG WITH THIS LINE
-    
+    background-color: ${(props)=>(props.jobType[0] === "full-time" ? 'lightgoldenrodyellow' : '')};
+    background-color: ${(props)=>(props.jobType[0] === "part-time" ? 'mistyrose' : '')};
+    background-color: ${(props)=>(props.jobType[0] === "contract" ? 'lightgrey' : '')};
+    color: black;
     border: 3px red solid;
     font: small-caps bold calc(2px + 1vw) Helvetica; 
     text-align: center;
