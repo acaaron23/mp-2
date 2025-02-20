@@ -23,13 +23,15 @@ const SingleCharDiv = styled.div<{jobType: string}>`
     background-color: ${(props)=>(props.jobType[0] === "full-time" ? 'lightgoldenrodyellow' : '')};
     background-color: ${(props)=>(props.jobType[0] === "part-time" ? 'mistyrose' : '')};
     background-color: ${(props)=>(props.jobType[0] === "contract" ? 'lightgrey' : '')};
+    background-color: ${(props)=>(props.jobType[0] === "internship" ? 'mediumpurple' : '')};
+
     color: black;
     border: 3px red solid;
     font: small-caps bold calc(2px + 1vw) Helvetica; 
     text-align: center;
 `;
 
-export default function JobFinder(props: { data:Job[] }){
+export default function JobInfo(props: { data:Job[] }){
     return (
         <AllCharsDiv>
             {

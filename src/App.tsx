@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from "styled-components";
 import { Job } from "./interfaces/Jobs.ts";
-import JobFinder from "./components/JobInfo.tsx";
+import JobInfo from "./components/JobInfo.tsx";
 
 const ParentDiv = styled.div`
     width: 80%;
@@ -29,7 +29,7 @@ export default function App() {
     return (
         <ParentDiv>
             <h1>Job Board for Remote Jobs in USA</h1>
-            <JobFinder data = {data}/>
+            <JobInfo data = {data}/>
         </ParentDiv>
   )
 }
