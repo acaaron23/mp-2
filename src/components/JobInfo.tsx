@@ -38,7 +38,7 @@ export default function JobInfo(props: { data:Job[] }){
                 props.data.map((char: Job) =>
                     <SingleCharDiv key = {char.id} jobType = {char.jobType}>
                         <h1>{char.companyName}</h1>
-                        <h2>{char.jobTitle}</h2>
+                        <h3>{char.jobTitle}</h3>
                         <p>{char.jobIndustry}</p>
                         <img src = {char.companyLogo} alt = {`image of ${char.companyName}`} />
                         <p>{char.jobType}</p>
